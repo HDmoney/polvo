@@ -7,7 +7,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="KotlinJavaRuntime" level="application" />
     <orderEntry type="library" name="LWJGL3" level="application" />
+    <orderEntry type="library" name="lombok" level="application" />
   </component>
 </module>
