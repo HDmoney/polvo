@@ -1,23 +1,22 @@
 package threading;
 
-import org.lwjgl.*;
-import org.lwjgl.glfw.*;
-import org.lwjgl.opengl.*;
+import org.lwjgl.glfw.GLFWErrorCallback;
+import org.lwjgl.glfw.GLFWVidMode;
+import org.lwjgl.opengl.GL;
+import util.timesteps.FixedTimestep;
 
-import static org.lwjgl.glfw.Callbacks.*;
+import static org.lwjgl.glfw.Callbacks.glfwFreeCallbacks;
 import static org.lwjgl.glfw.GLFW.*;
 import static org.lwjgl.opengl.GL11.*;
-import static org.lwjgl.system.MemoryUtil.*;
+import static org.lwjgl.system.MemoryUtil.NULL;
 
-public class RenderingThread implements Runnable {
+public class PatcherContext {
 
 
     // The window handle
     private long window;
 
-    @Override
     public void run() {
-        System.out.println("Hello LWJGL " + Version.getVersion() + "!");
 
         try {
             init();
@@ -73,9 +72,10 @@ public class RenderingThread implements Runnable {
 
         // Make the OpenGL context current
         glfwMakeContextCurrent(window);
-        // Enable v-sync
-        glfwSwapInterval(1);
-
+        //TODO: not v-sync here?
+        if (false) {
+            glfwSwapInterval(1);
+        }
         // Make the window visible
         glfwShowWindow(window);
     }
@@ -93,14 +93,26 @@ public class RenderingThread implements Runnable {
 
         // Run the rendering loop until the user has attempted to close
         // the window or has pressed the ESCAPE key.
-        while (!glfwWindowShouldClose(window)) {
-            glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // clear the framebuffer
 
-            glfwSwapBuffers(window); // swap the color buffers
+        FixedTimestep patcher = new FixedTimestep(60) {
+            @Override
+            public boolean checkStopLoop() {
+                return glfwWindowShouldClose(window);
+            }
 
-            // Poll for window events. The key callback above will only be
-            // invoked during this call.
-            glfwPollEvents();
-        }
+            @Override
+            public void iteration(double delta) {
+                glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // clear the framebuffer
+
+                //TODO: Actual rendering here
+
+                glfwSwapBuffers(window); // swap the color buffers
+
+                // Poll for window events. The key callback above will only be
+                // invoked during this call.
+                glfwPollEvents();
+            }
+        };
+        patcher.run();
     }
 }

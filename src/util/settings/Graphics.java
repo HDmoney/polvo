@@ -8,7 +8,7 @@ public class Graphics {
     public static boolean hdr;
     public static boolean bloom;
     public static boolean ambientocclusion;
-    public static int[] resolution;
+    public static int[] resolution = new int[]{640, 480};
 
     public static enum AntiAliasing {
         NONE, MSAA;
