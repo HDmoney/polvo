@@ -10,5 +10,6 @@
     <orderEntry type="library" exported="" name="LWJGL3" level="application" />
     <orderEntry type="library" exported="" name="lombok" level="application" />
     <orderEntry type="library" exported="" name="ini4j-0.5" level="application" />
+    <orderEntry type="library" name="JOML" level="application" />
   </component>
 </module>
