@@ -1,13 +1,12 @@
 package util.timesteps;
 
+import static org.lwjgl.glfw.GLFW.glfwGetTime;
+
 public abstract class AbstractTimestep {
 
     //TODO: VSync timestep
     //TODO: Uncapped timestep
     //TODO: Variable timestep?
-
-
-    protected long startTime;
 
     protected double lastLoopTime;
     protected float timeCount;
@@ -20,17 +19,8 @@ public abstract class AbstractTimestep {
 
     public abstract void run();
 
-    public void initTimer() {
-        startTime = System.nanoTime();
-        lastLoopTime = 0d;
-    }
-
-    public double getTime() {
-        return (System.nanoTime() - startTime) / 1000000000d;
-    }
-
     public float getDelta() {
-        double time = getTime();
+        double time = glfwGetTime();
         float delta = (float) (time - lastLoopTime);
         lastLoopTime = time;
         timeCount += delta;
@@ -39,14 +29,6 @@ public abstract class AbstractTimestep {
 
     public void updateIPS() {
         ipsCount++;
-    }
-
-    public void updateTimer() {
-        if (timeCount > 1f) {
-            iterationsPerSecond = ipsCount;
-            ipsCount = 0;
-            timeCount -= 1f;
-        }
     }
 
     public int getIPS() {

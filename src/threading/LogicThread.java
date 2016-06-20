@@ -17,9 +17,15 @@ public class LogicThread implements Runnable {
             }
 
             @Override
-            public void iteration(double delta) { /* Update logic here. */ }
+            public void iteration(double delta) {
+                update(delta);
+            }
         };
         logic.run();
+    }
+
+    private void update(double delta) {
+        //System.out.println(glfwGetTime());
     }
 
 

@@ -1,6 +1,7 @@
 package util.timesteps;
 
 import static java.lang.Thread.yield;
+import static org.lwjgl.glfw.GLFW.glfwGetTime;
 
 public class FixedTimestep extends AbstractTimestep {
 
@@ -25,7 +26,6 @@ public class FixedTimestep extends AbstractTimestep {
         //Heavily inspired by http://gafferongames.com/game-physics/fix-your-timestep/
         //and https://github.com/SilverTiger/lwjgl3-tutorial/wiki/Game-loops
 
-        initTimer();
         float delta;
         float accumulator = 0f;
         float interval = 1f / frequency;
@@ -44,7 +44,7 @@ public class FixedTimestep extends AbstractTimestep {
     }
 
     public void sync() {
-        double now = getTime();
+        double now = glfwGetTime();
         double timeSinceStart = now - lastLoopTime;
         float targetTime = 1f / frequency;
 
@@ -59,7 +59,7 @@ public class FixedTimestep extends AbstractTimestep {
             }
             yield();
 
-            now = getTime();
+            now = glfwGetTime();
             timeSinceStart = now - lastLoopTime;
         }
     }
