@@ -12,39 +12,43 @@ import static org.lwjgl.opengl.GL20.glDisableVertexAttribArray;
 import static org.lwjgl.opengl.GL20.glEnableVertexAttribArray;
 import static org.lwjgl.opengl.GL30.glBindVertexArray;
 
-public class GuiPixel extends GuiObject {
+public class GuiTriangle extends GuiObject {
     @Getter
-    private int x, y;
+    private int x1, y1, x2, y2, x3, y3;
     @Getter
     private GuiColor color;
 
-    public GuiPixel(int x, int y, GuiColor color) {
-        init(x, y, color);
+    public GuiTriangle(int x1, int y1, int x2, int y2, int x3, int y3, GuiColor color) {
+        init(x1, y1, x2, y2, x3, y3, color);
     }
 
-    public GuiPixel(Vector2i xy, GuiColor color) {
-        init(xy.x, xy.y, color);
+    public GuiTriangle(Vector2i xy1, Vector2i xy2, Vector2i xy3, GuiColor color) {
+        init(xy1.x, xy1.y, xy2.x, xy2.y, xy3.x, xy3.y, color);
     }
 
-    private void init(int x, int y, GuiColor color) {
-        this.x = x;
-        this.y = y;
+    private void init(int x1, int y1, int x2, int y2, int x3, int y3, GuiColor color) {
+        this.x1 = x1;
+        this.y1 = y1;
+        this.x2 = x2;
+        this.y2 = y2;
+        this.x3 = x3;
+        this.y3 = y3;
 
         this.color = color;
 
-        float xf = xToFloat(x);
-        float yf = yToFloat(y);
-        float xf1 = xToFloat(x + 1);
-        float yf1 = yToFloat(y + 1);
+        float xf1 = xToFloat(x1);
+        float yf1 = yToFloat(y1);
+        float xf2 = xToFloat(x2);
+        float yf2 = yToFloat(y2);
+        float xf3 = xToFloat(x3);
+        float yf3 = yToFloat(y3);
 
         mesh = new Mesh(new float[]{
-                xf, yf1, 0.0f,
-                xf, yf, 0.0f,
-                xf1, yf, 0.0f,
-                xf1, yf1, 0.0f
+                xf1, yf1, 0.0f,
+                xf2, yf2, 0.0f,
+                xf3, yf3, 0.0f,
         }, color.rgbFloatArray(), new int[]{
-                0, 1, 3,
-                3, 1, 2,
+                0, 1, 2
         });
     }
 

@@ -12,57 +12,48 @@ import static org.lwjgl.opengl.GL20.glDisableVertexAttribArray;
 import static org.lwjgl.opengl.GL20.glEnableVertexAttribArray;
 import static org.lwjgl.opengl.GL30.glBindVertexArray;
 
-public class GuiLine extends GuiObject {
-
+public class GuiRectangle extends GuiObject {
     @Getter
     private int x, y;
     @Getter
-    private int nx, ny;
+    private int width, height;
     @Getter
     private GuiColor color;
 
-    public GuiLine(int x, int y, int nx, int ny, GuiColor color) {
-        init(x, y, nx, ny, color);
+    public GuiRectangle(int x, int y, int width, int height, GuiColor color) {
+        init(x, y, width, height, color);
     }
 
-    public GuiLine(Vector2i xy1, Vector2i xy2, GuiColor color) {
-        init(xy1.x, xy1.y, xy2.x, xy2.y, color);
+    public GuiRectangle(Vector2i xy, int width, int height, GuiColor color) {
+        init(xy.x, xy.y, width, height, color);
     }
 
-    private void init(int x, int y, int nx, int ny, GuiColor color) {
+    private void init(int x, int y, int width, int height, GuiColor color) {
         this.x = x;
         this.y = y;
-        this.nx = nx;
-        this.ny = ny;
+        this.width = width;
+        this.height = height;
+
         this.color = color;
 
-        float xf0 = xToFloat(x);
-        float xf1 = xToFloat(x + 1);
-        float yf0 = yToFloat(y);
-        float yf1 = yToFloat(y + 1);
-
-        float nxf0 = xToFloat(nx);
-        float nxf1 = xToFloat(nx + 1);
-        float nyf0 = yToFloat(ny);
-        float nyf1 = yToFloat(ny + 1);
+        float xf = xToFloat(x);
+        float yf = yToFloat(y);
+        float xf1 = xToFloat(x + width);
+        float yf1 = yToFloat(y + height);
 
         mesh = new Mesh(new float[]{
-                xf0, yf0, 0f,
-                xf1, yf0, 0f,
-                xf0, yf1, 0f,
-
-                nxf1, nyf1, 0f,
-                nxf1, nyf0, 0f,
-                nxf0, nyf1, 0f,
-        }, color.rgbFloatArray(6), new int[]{
-                1, 0, 2,
-                1, 2, 5,
-                1, 5, 4,
-                5, 4, 3
+                xf, yf1, 0.0f,
+                xf, yf, 0.0f,
+                xf1, yf, 0.0f,
+                xf1, yf1, 0.0f
+        }, color.rgbFloatArray(), new int[]{
+                0, 1, 3,
+                3, 1, 2,
         });
     }
 
     public void render(double delta) {
+
         // Draw the mesh
         glBindVertexArray(mesh.getVaoId());
         glEnableVertexAttribArray(0);

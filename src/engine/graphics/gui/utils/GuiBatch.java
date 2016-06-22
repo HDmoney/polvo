@@ -1,6 +1,7 @@
-package engine.graphics.gui.simple;
+package engine.graphics.gui.utils;
 
 import engine.graphics.Mesh;
+import engine.graphics.gui.simple.GuiObject;
 
 import static org.lwjgl.opengl.GL11.*;
 import static org.lwjgl.opengl.GL20.glDisableVertexAttribArray;

@@ -1,6 +1,6 @@
 package engine.graphics.gui;
 
-import engine.graphics.gui.simple.GuiUtils;
+import engine.graphics.gui.utils.GuiUtils;
 import engine.util.timesteps.FixedTimestep;
 import org.lwjgl.glfw.GLFWVidMode;
 import org.lwjgl.opengl.GL;

@@ -1,4 +1,4 @@
-package engine.graphics.gui.simple;
+package engine.graphics.gui.utils;
 
 import lombok.Getter;
 import lombok.Setter;

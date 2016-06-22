@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="da2daa77-efd8-4de7-a289-1049e2501177" name="Default" comment="Reconfigured project dependency setup">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiBatch.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiObject.java" />
+    <list default="true" id="da2daa77-efd8-4de7-a289-1049e2501177" name="Default" comment="Added mesh combining for batch rendering.&#10;Added a parent object for GUI elements&#10;Added GUI batch combining">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiRectangle.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiTriangle.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiBatch.java" afterPath="$PROJECT_DIR$/src/engine/graphics/gui/utils/GuiBatch.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiColor.java" afterPath="$PROJECT_DIR$/src/engine/graphics/gui/utils/GuiColor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiUtils.java" afterPath="$PROJECT_DIR$/src/engine/graphics/gui/utils/GuiUtils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/polvo.iml" afterPath="$PROJECT_DIR$/polvo.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/engine/graphics/Mesh.java" afterPath="$PROJECT_DIR$/src/engine/graphics/Mesh.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/engine/graphics/gui/Window.java" afterPath="$PROJECT_DIR$/src/engine/graphics/gui/Window.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiLine.java" afterPath="$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiLine.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiPixel.java" afterPath="$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiPixel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/threading/MainThread.java" afterPath="$PROJECT_DIR$/src/game/threading/MainThread.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/threading/PatcherContext.java" afterPath="$PROJECT_DIR$/src/game/threading/PatcherContext.java" />
     </list>
     <ignored path="polvo.iws" />
@@ -32,25 +33,52 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PatcherContext.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PatcherContext.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/game/threading/PatcherContext.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="46" column="56" selection-start-line="46" selection-start-column="56" selection-end-line="46" selection-end-column="56" />
+            <state relative-caret-position="275">
+              <caret line="57" column="1" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Mesh.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GuiTriangle.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiTriangle.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="149">
+              <caret line="20" column="87" selection-start-line="20" selection-start-column="87" selection-end-line="20" selection-end-column="87" />
+              <folding>
+                <element signature="method#GuiTriangle#0;class#GuiTriangle#0" expanded="false" />
+                <element signature="method#GuiTriangle#1;class#GuiTriangle#0" expanded="false" />
+                <element signature="method#init#0;class#GuiTriangle#0" expanded="false" />
+                <element signature="method#render#0;class#GuiTriangle#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Mesh.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/engine/graphics/Mesh.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="118" column="5" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
+            <state relative-caret-position="203">
+              <caret line="134" column="5" selection-start-line="134" selection-start-column="5" selection-end-line="134" selection-end-column="5" />
               <folding>
-                <element signature="method#cleanUp#0;class#Mesh#0" expanded="false" />
                 <element signature="method#combinePositions#0;class#Mesh#0" expanded="false" />
-                <element signature="method#combineColors#0;class#Mesh#0" expanded="false" />
+                <element signature="method#cleanUp#0;class#Mesh#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GuiRectangle.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiRectangle.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="185">
+              <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+              <folding>
+                <element signature="method#init#0;class#GuiRectangle#0" expanded="false" />
+                <element signature="method#render#0;class#GuiRectangle#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -59,8 +87,8 @@
       <file leaf-file-name="GuiObject.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+            <state relative-caret-position="90">
+              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -68,11 +96,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainThread.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/threading/MainThread.java">
+      <file leaf-file-name="GuiUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/engine/graphics/gui/utils/GuiUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+            <state relative-caret-position="270">
+              <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -81,18 +109,21 @@
       <file leaf-file-name="GuiLine.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiLine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-              <folding />
+            <state relative-caret-position="223">
+              <caret line="28" column="48" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
+              <folding>
+                <element signature="method#init#0;class#GuiLine#0" expanded="false" />
+                <element signature="method#render#0;class#GuiLine#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="GuiBatch.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiBatch.java">
+        <entry file="file://$PROJECT_DIR$/src/engine/graphics/gui/utils/GuiBatch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+            <state relative-caret-position="95">
+              <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -113,9 +144,12 @@
       <file leaf-file-name="GuiPixel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiPixel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="48" column="24" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
-              <folding />
+            <state relative-caret-position="198">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding>
+                <element signature="method#init#0;class#GuiPixel#0" expanded="false" />
+                <element signature="method#render#0;class#GuiPixel#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -140,7 +174,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/util/vector/Matrix2f.java" />
         <option value="$PROJECT_DIR$/src/util/vector/Matrix.java" />
         <option value="$PROJECT_DIR$/src/util/vector/Matrix3f.java" />
         <option value="$PROJECT_DIR$/src/util/vector/Matrix4f.java" />
@@ -183,12 +216,15 @@
         <option value="$PROJECT_DIR$/.git/info/exclude" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/game/threading/MainThread.java" />
-        <option value="$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiLine.java" />
         <option value="$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiObject.java" />
-        <option value="$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiPixel.java" />
         <option value="$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiBatch.java" />
-        <option value="$PROJECT_DIR$/src/game/threading/PatcherContext.java" />
         <option value="$PROJECT_DIR$/src/engine/graphics/Mesh.java" />
+        <option value="$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiTriangle.java" />
+        <option value="$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiLine.java" />
+        <option value="$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiPixel.java" />
+        <option value="$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiRectangle.java" />
+        <option value="$PROJECT_DIR$/src/engine/graphics/gui/utils/GuiUtils.java" />
+        <option value="$PROJECT_DIR$/src/game/threading/PatcherContext.java" />
       </list>
     </option>
   </component>
@@ -409,36 +445,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="polvo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="polvo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="engine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simple" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -457,10 +463,12 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="engine.graphics.gui.utils" />
       <recent name="engine" />
       <recent name="gui" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="engine.graphics.gui.simple" />
       <recent name="util.vector" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -804,7 +812,14 @@
       <option name="project" value="LOCAL" />
       <updated>1466621119406</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added mesh combining for batch rendering.&#10;Added a parent object for GUI elements&#10;Added GUI batch combining">
+      <created>1466629753920</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1466629753920</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
@@ -818,7 +833,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="1" width="1366" height="766" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -828,11 +843,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18111455" sideWeight="0.5075643" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27863777" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3374613" sideWeight="0.4924357" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3374613" sideWeight="0.4924357" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26928896" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2700454" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -867,7 +882,8 @@
     <MESSAGE value="Initialized GLFW before threads start&#10;Refactored timesteps to use GLFW time&#10;Added a Window system&#10;General cleanliness." />
     <MESSAGE value="Added some simple elements for GUI" />
     <MESSAGE value="Reconfigured project dependency setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reconfigured project dependency setup" />
+    <MESSAGE value="Added mesh combining for batch rendering.&#10;Added a parent object for GUI elements&#10;Added GUI batch combining" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added mesh combining for batch rendering.&#10;Added a parent object for GUI elements&#10;Added GUI batch combining" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -883,8 +899,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/util/vector/Vector3f.java" />
-    <entry file="file://$PROJECT_DIR$/src/util/vector/Vector2f.java" />
     <entry file="file://$PROJECT_DIR$/src/threading/AbstractFixedThread.java" />
     <entry file="file://$PROJECT_DIR$/src/util/Timer.java" />
     <entry file="file://$PROJECT_DIR$/src/util/vector/Vector.java" />
@@ -1095,21 +1109,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiColor.java">
+    <entry file="file://$PROJECT_DIR$/src/engine/graphics/gui/utils/GuiColor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1205,18 +1209,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/engine/graphics/Mesh.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="134" column="5" selection-start-line="134" selection-start-column="5" selection-end-line="134" selection-end-column="5" />
+          <folding>
+            <element signature="method#combinePositions#0;class#Mesh#0" expanded="false" />
+            <element signature="method#cleanUp#0;class#Mesh#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engine/graphics/gui/utils/GuiBatch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engine/graphics/gui/utils/GuiUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiLine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-          <folding />
+        <state relative-caret-position="223">
+          <caret line="28" column="48" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
+          <folding>
+            <element signature="method#init#0;class#GuiLine#0" expanded="false" />
+            <element signature="method#render#0;class#GuiLine#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+        <state relative-caret-position="90">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1225,39 +1261,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiPixel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="48" column="24" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
-          <folding />
+        <state relative-caret-position="198">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="method#init#0;class#GuiPixel#0" expanded="false" />
+            <element signature="method#render#0;class#GuiPixel#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiRectangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+          <folding>
+            <element signature="method#init#0;class#GuiRectangle#0" expanded="false" />
+            <element signature="method#render#0;class#GuiRectangle#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiTriangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="20" column="87" selection-start-line="20" selection-start-column="87" selection-end-line="20" selection-end-column="87" />
+          <folding>
+            <element signature="method#GuiTriangle#0;class#GuiTriangle#0" expanded="false" />
+            <element signature="method#GuiTriangle#1;class#GuiTriangle#0" expanded="false" />
+            <element signature="method#init#0;class#GuiTriangle#0" expanded="false" />
+            <element signature="method#render#0;class#GuiTriangle#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/threading/PatcherContext.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="46" column="56" selection-start-line="46" selection-start-column="56" selection-end-line="46" selection-end-column="56" />
+        <state relative-caret-position="275">
+          <caret line="57" column="1" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiBatch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/engine/graphics/Mesh.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="118" column="5" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
-          <folding>
-            <element signature="method#cleanUp#0;class#Mesh#0" expanded="false" />
-            <element signature="method#combinePositions#0;class#Mesh#0" expanded="false" />
-            <element signature="method#combineColors#0;class#Mesh#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>

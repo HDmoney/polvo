@@ -1,4 +1,4 @@
-package engine.graphics.gui.simple;
+package engine.graphics.gui.utils;
 
 import org.joml.Vector4f;
 
