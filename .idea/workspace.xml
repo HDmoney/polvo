@@ -1,103 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="da2daa77-efd8-4de7-a289-1049e2501177" name="Default" comment="Added some simple elements for GUI">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/ini4j-0.5.4/ini4j-0.5.4-jdk14.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/ini4j-0.5.4/ini4j-0.5.4.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/AxisAngle4d.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/AxisAngle4f.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/FrustumIntersection.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/FrustumRayBuilder.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/GeometryUtils.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/Interpolationd.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/Interpolationf.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/Intersectiond.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/Intersectionf.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/Matrix3d.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/Matrix3f.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/Matrix4d.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/Matrix4f.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/Matrix4x3d.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/Matrix4x3f.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/MatrixStackd.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/MatrixStackf.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/MemUtil$MemUtilNIO.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/MemUtil$MemUtilUnsafe.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/MemUtil.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/PolygonsIntersection$ByEndComparator.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/PolygonsIntersection$ByStartComparator.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/PolygonsIntersection$Interval.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/PolygonsIntersection$IntervalTreeNode.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/PolygonsIntersection.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/Quaterniond.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/QuaterniondInterpolator$SvdDecomposition3d.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/QuaterniondInterpolator.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/Quaternionf.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/QuaternionfInterpolator$SvdDecomposition3f.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/QuaternionfInterpolator.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/RayAabIntersection.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/SimplexNoise$Vector3b.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/SimplexNoise$Vector4b.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/SimplexNoise.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/TrapezoidOrthoCrop$Vector2fComparator.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/TrapezoidOrthoCrop.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/Vector2d.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/Vector2f.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/Vector2i.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/Vector3d.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/Vector3f.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/Vector3i.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/Vector4d.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/Vector4f.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/target/classes/org/joml/Vector4i.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/lombok.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/lwjgl3/doc/javadoc.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/lwjgl3/jar/lwjgl.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/lwjgl3/native/OpenAL.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/lwjgl3/native/OpenAL32.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/lwjgl3/native/glfw.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/lwjgl3/native/glfw32.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/lwjgl3/native/jemalloc.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/lwjgl3/native/jemalloc32.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/lwjgl3/native/libglfw.dylib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/lwjgl3/native/libglfw.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/lwjgl3/native/libjemalloc.dylib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/lwjgl3/native/libjemalloc.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/lwjgl3/native/liblwjgl.dylib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/lwjgl3/native/liblwjgl.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/lwjgl3/native/libopenal.dylib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/lwjgl3/native/libopenal.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/lwjgl3/native/lwjgl.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/lwjgl3/native/lwjgl32.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/lwjgl3/src.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/dwbrite.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/ini4j_0_5_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/joml.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/lombok.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/lwjgl3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/ini4j-0.5.4/LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/ini4j-0.5.4/NOTICE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/joml/JOML-master/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/lwjgl3/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/lwjgl3/build.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/lwjgl3/doc/3rdparty/dyncall_license.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/lwjgl3/doc/3rdparty/glfw_license.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/lwjgl3/doc/3rdparty/jemalloc_license.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/lwjgl3/doc/3rdparty/khronos_license.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/lwjgl3/doc/3rdparty/lmdb_license.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/lwjgl3/doc/3rdparty/nanovg_license.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/lwjgl3/doc/3rdparty/nfd_license.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/lwjgl3/doc/3rdparty/oculus_license.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/lwjgl3/doc/3rdparty/openal_soft_license.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/lwjgl3/doc/3rdparty/xxhash_license.txt" />
+    <list default="true" id="da2daa77-efd8-4de7-a289-1049e2501177" name="Default" comment="Reconfigured project dependency setup">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiBatch.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiObject.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/polvo.iml" afterPath="$PROJECT_DIR$/polvo.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/engine/graphics/Mesh.java" afterPath="$PROJECT_DIR$/src/engine/graphics/Mesh.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiLine.java" afterPath="$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiLine.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiPixel.java" afterPath="$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiPixel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/threading/MainThread.java" afterPath="$PROJECT_DIR$/src/game/threading/MainThread.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/threading/PatcherContext.java" afterPath="$PROJECT_DIR$/src/game/threading/PatcherContext.java" />
     </list>
     <ignored path="polvo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -122,94 +35,76 @@
       <file leaf-file-name="PatcherContext.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/threading/PatcherContext.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="44" column="57" selection-start-line="44" selection-start-column="57" selection-end-line="44" selection-end-column="57" />
+            <state relative-caret-position="149">
+              <caret line="46" column="56" selection-start-line="46" selection-start-column="56" selection-end-line="46" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="modules.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="misc.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="polvo.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/polvo.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="Mesh.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/engine/graphics/Mesh.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="18">
-              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+              <caret line="118" column="5" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
+              <folding>
+                <element signature="method#cleanUp#0;class#Mesh#0" expanded="false" />
+                <element signature="method#combinePositions#0;class#Mesh#0" expanded="false" />
+                <element signature="method#combineColors#0;class#Mesh#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GuiObject.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainThread.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/threading/MainThread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="MarkdownFxPreviewEditor">
-            <state />
-          </provider>
-          <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="36">
-                <caret line="2" column="164" selection-start-line="2" selection-start-column="164" selection-end-line="2" selection-end-column="164" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="exclude" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.git/info/exclude">
+      <file leaf-file-name="GuiLine.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiLine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+            <state relative-caret-position="198">
+              <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Project_Default.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml">
+      <file leaf-file-name="GuiBatch.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiBatch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="151">
+              <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profiles_settings.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml">
+      <file leaf-file-name="LogicThread.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/threading/LogicThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="466">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -218,8 +113,8 @@
       <file leaf-file-name="GuiPixel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiPixel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-117">
-              <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+            <state relative-caret-position="560">
+              <caret line="48" column="24" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -254,7 +149,6 @@
         <option value="$PROJECT_DIR$/src/util/vector/Vector2f.java" />
         <option value="$PROJECT_DIR$/src/util/vector/Vector.java" />
         <option value="$PROJECT_DIR$/src/util/vector/Vector4f.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/util/Timer.java" />
         <option value="$PROJECT_DIR$/src/threading/AbstractFixedThread.java" />
         <option value="$PROJECT_DIR$/src/util/AbstractTimestep.java" />
@@ -275,23 +169,26 @@
         <option value="$PROJECT_DIR$/res/shaders/fragment/default.fs" />
         <option value="$PROJECT_DIR$/src/engine/util/settings/Graphics.java" />
         <option value="$PROJECT_DIR$/src/engine/graphics/ShaderProgram.java" />
-        <option value="$PROJECT_DIR$/src/engine/graphics/Mesh.java" />
         <option value="$PROJECT_DIR$/src/engine/graphics/Transformation.java" />
         <option value="$PROJECT_DIR$/res/shaders/vertex/default.vs" />
         <option value="$PROJECT_DIR$/src/game/temp.java" />
         <option value="$PROJECT_DIR$/src/game/Temp2.java" />
         <option value="$PROJECT_DIR$/src/game/Temp.java" />
         <option value="$PROJECT_DIR$/src/game/threading/RenderingContext.java" />
-        <option value="$PROJECT_DIR$/src/game/threading/MainThread.java" />
         <option value="$PROJECT_DIR$/src/engine/graphics/gui/Window.java" />
-        <option value="$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiPixel.java" />
         <option value="$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiUtils.java" />
-        <option value="$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiLine.java" />
         <option value="$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiColor.java" />
-        <option value="$PROJECT_DIR$/src/game/threading/PatcherContext.java" />
         <option value="$PROJECT_DIR$/polvo.iml" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/.git/info/exclude" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/game/threading/MainThread.java" />
+        <option value="$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiLine.java" />
+        <option value="$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiObject.java" />
+        <option value="$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiPixel.java" />
+        <option value="$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiBatch.java" />
+        <option value="$PROJECT_DIR$/src/game/threading/PatcherContext.java" />
+        <option value="$PROJECT_DIR$/src/engine/graphics/Mesh.java" />
       </list>
     </option>
   </component>
@@ -416,7 +313,129 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="polvo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="polvo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="threading" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="polvo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="polvo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="engine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="polvo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="polvo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="engine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graphics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="polvo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="polvo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="engine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graphics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="polvo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="polvo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="engine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graphics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -429,11 +448,12 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/lwjgl3/doc" />
     <property name="prop_add_unversioned_files" value="true" />
+    <property name="ignore_missing_gitignore" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -777,7 +797,14 @@
       <option name="project" value="LOCAL" />
       <updated>1466618284395</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Reconfigured project dependency setup">
+      <created>1466621119406</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1466621119406</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView">
@@ -798,14 +825,15 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32198143" sideWeight="0.4969743" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33126935" sideWeight="0.5045386" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18111455" sideWeight="0.5075643" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18266253" sideWeight="0.49546143" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27863777" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3374613" sideWeight="0.4924357" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26928896" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26928896" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -817,7 +845,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -839,7 +866,8 @@
     <MESSAGE value="Removed legacy vector math in favor of JOML" />
     <MESSAGE value="Initialized GLFW before threads start&#10;Refactored timesteps to use GLFW time&#10;Added a Window system&#10;General cleanliness." />
     <MESSAGE value="Added some simple elements for GUI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added some simple elements for GUI" />
+    <MESSAGE value="Reconfigured project dependency setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reconfigured project dependency setup" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -855,8 +883,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/util/vector/Matrix3f.java" />
-    <entry file="file://$PROJECT_DIR$/src/util/vector/Quaternion.java" />
     <entry file="file://$PROJECT_DIR$/src/util/vector/Vector3f.java" />
     <entry file="file://$PROJECT_DIR$/src/util/vector/Vector2f.java" />
     <entry file="file://$PROJECT_DIR$/src/threading/AbstractFixedThread.java" />
@@ -896,21 +922,9 @@
         <state relative-caret-position="195">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="method#run#0;class#FixedTimestep#0" expanded="false" />
             <element signature="method#sync#0;class#FixedTimestep#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/threading/LogicThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="33" column="58" selection-start-line="33" selection-start-column="58" selection-end-line="33" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#474#475#0" expanded="false" />
-            <element signature="e#519#520#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1047,16 +1061,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/threading/MainThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/engine/graphics/Transformation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -1099,49 +1103,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/engine/graphics/Mesh.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="29" column="67" selection-start-line="29" selection-start-column="67" selection-end-line="29" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#Mesh#0;class#Mesh#0" expanded="false" />
-            <element signature="method#cleanUp#0;class#Mesh#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiLine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiPixel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-117">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/threading/PatcherContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="44" column="57" selection-start-line="44" selection-start-column="57" selection-end-line="44" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1180,7 +1148,7 @@
     <entry file="file://$PROJECT_DIR$/polvo.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1214,10 +1182,82 @@
       <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="36">
-            <caret line="2" column="164" selection-start-line="2" selection-start-column="164" selection-end-line="2" selection-end-column="164" />
+            <caret line="2" column="225" selection-start-line="2" selection-start-column="225" selection-end-line="2" selection-end-column="225" />
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/threading/MainThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/threading/LogicThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiLine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiPixel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="48" column="24" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/threading/PatcherContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="46" column="56" selection-start-line="46" selection-start-column="56" selection-end-line="46" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engine/graphics/gui/simple/GuiBatch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engine/graphics/Mesh.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="118" column="5" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
+          <folding>
+            <element signature="method#cleanUp#0;class#Mesh#0" expanded="false" />
+            <element signature="method#combinePositions#0;class#Mesh#0" expanded="false" />
+            <element signature="method#combineColors#0;class#Mesh#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1279,6 +1319,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

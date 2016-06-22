@@ -4,6 +4,7 @@
 
 package engine.graphics;
 
+import lombok.Getter;
 import org.lwjgl.BufferUtils;
 
 import java.nio.FloatBuffer;
@@ -16,18 +17,25 @@ import static org.lwjgl.opengl.GL20.glVertexAttribPointer;
 import static org.lwjgl.opengl.GL30.*;
 
 public class Mesh {
+    //TODO: Add "Mesh" combining for batch rendering.
 
+    @Getter
+    public final float[] positions;
+    @Getter
+    public final float[] colors;
+    @Getter
+    public final int[] indices;
     private final int vaoId;
-
     private final int posVboId;
-
     private final int colourVboId;
-
     private final int idxVboId;
-
     private final int vertexCount;
 
-    public Mesh(float[] positions, float[] colours, int[] indices) {
+    public Mesh(float[] positions, float[] colors, int[] indices) {
+        this.positions = positions;
+        this.colors = colors;
+        this.indices = indices;
+
         vertexCount = indices.length;
 
         vaoId = glGenVertexArrays();
@@ -43,8 +51,8 @@ public class Mesh {
 
         // Colour VBO
         colourVboId = glGenBuffers();
-        FloatBuffer colourBuffer = BufferUtils.createFloatBuffer(colours.length);
-        colourBuffer.put(colours).flip();
+        FloatBuffer colourBuffer = BufferUtils.createFloatBuffer(colors.length);
+        colourBuffer.put(colors).flip();
         glBindBuffer(GL_ARRAY_BUFFER, colourVboId);
         glBufferData(GL_ARRAY_BUFFER, colourBuffer, GL_STATIC_DRAW);
         glVertexAttribPointer(1, 3, GL_FLOAT, false, 0, 0);
@@ -58,6 +66,68 @@ public class Mesh {
 
         glBindBuffer(GL_ARRAY_BUFFER, 0);
         glBindVertexArray(0);
+    }
+
+    public static Mesh combine(Mesh... meshes) {
+        float[] positions = combinePositions(meshes);
+        float[] colors = combineColors(meshes);
+        int[] indices = combineIndices(meshes);
+        return new Mesh(positions, colors, indices);
+    }
+
+    public static float[] combinePositions(Mesh[] meshes) {
+        int totalLength = 0;
+        for (int i = 0; i < meshes.length; i++) {
+            totalLength += meshes[i].getPositions().length;
+        }
+        float[] result = new float[totalLength];
+        int positionTracker = 0;
+        for (int i = 0; i < meshes.length; i++) {
+            for (int j = 0; j < meshes[i].getPositions().length; j++) {
+                result[positionTracker] = meshes[i].getPositions()[j];
+                positionTracker++;
+            }
+        }
+
+        return result;
+    }
+
+    public static float[] combineColors(Mesh[] meshes) {
+        int totalLength = 0;
+        for (int i = 0; i < meshes.length; i++) {
+            totalLength += meshes[i].getColors().length;
+        }
+        float[] result = new float[totalLength];
+        int positionTracker = 0;
+        for (int i = 0; i < meshes.length; i++) {
+            for (int j = 0; j < meshes[i].getColors().length; j++) {
+                result[positionTracker] = meshes[i].getColors()[j];
+                positionTracker++;
+            }
+        }
+
+        return result;
+    }
+
+    public static int[] combineIndices(Mesh[] meshes) {
+        int totalLength = 0;
+        for (int i = 0; i < meshes.length; i++) {
+            totalLength += meshes[i].getIndices().length;
+        }
+        int[] result = new int[totalLength];
+
+        int positionTracker = 0;
+        int indexOffset = 0;
+
+        for (int i = 0; i < meshes.length; i++) {
+            for (int j = 0; j < meshes[i].getIndices().length; j++) {
+                result[positionTracker] = meshes[i].getIndices()[j] + indexOffset;
+                positionTracker++;
+            }
+            indexOffset += meshes[i].getPositions().length / 3;
+        }
+
+        return result;
     }
 
     public int getVaoId() {

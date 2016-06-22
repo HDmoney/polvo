@@ -2,6 +2,7 @@ package game.threading;
 
 import engine.graphics.ShaderProgram;
 import engine.graphics.gui.Window;
+import engine.graphics.gui.simple.GuiBatch;
 import engine.graphics.gui.simple.GuiColor;
 import engine.graphics.gui.simple.GuiLine;
 import engine.graphics.gui.simple.GuiPixel;
@@ -11,7 +12,7 @@ public class PatcherContext {
 
     Window window;
     ShaderProgram shaderProgram;
-    GuiLine guiThing;
+    GuiBatch guiThing;
     GuiPixel[] pxls;
 
     public void run() {
@@ -41,12 +42,12 @@ public class PatcherContext {
     }
 
     private void init() throws Exception {
-        //TODO: Make TODO list
-        //TODO: Add "Mesh" combining for batch rendering.
-
-
         //TODO: Remove GUI element testing
-        guiThing = new GuiLine(40, 20, 280, 20, new GuiColor("#FF00FF"));
+        guiThing = new GuiBatch(
+                new GuiPixel(2, 2, new GuiColor("#0000FF")),
+                new GuiLine(40, 20, 280, 20, new GuiColor("#FF00FF")),
+                new GuiPixel(1, 1, new GuiColor("#FF0000"))
+        );
 
         shaderProgram = new ShaderProgram();
         shaderProgram.createVertexShader(IOUtils.loadResource("/shaders/vertex/flat.vs"));

@@ -9,6 +9,8 @@ public class MainThread {
 
 
     public static void main(String[] args) {
+        //TODO: Make TODO list
+
         //NOTE: The GLFW MUST be in the main thread, otherwise OSX will get angry.
         initGlfwLib();
 

@@ -10,7 +10,7 @@ import static org.lwjgl.opengl.GL20.glDisableVertexAttribArray;
 import static org.lwjgl.opengl.GL20.glEnableVertexAttribArray;
 import static org.lwjgl.opengl.GL30.glBindVertexArray;
 
-public class GuiLine {
+public class GuiLine extends GuiObject {
 
     @Getter
     private int x, y;
@@ -18,8 +18,6 @@ public class GuiLine {
     private int nx, ny;
     @Getter
     private GuiColor color;
-    @Getter
-    private Mesh mesh;
 
     public GuiLine(int x, int y, int nx, int ny, GuiColor color) {
         this.x = x;

@@ -10,13 +10,11 @@ import static org.lwjgl.opengl.GL20.glDisableVertexAttribArray;
 import static org.lwjgl.opengl.GL20.glEnableVertexAttribArray;
 import static org.lwjgl.opengl.GL30.glBindVertexArray;
 
-public class GuiPixel {
+public class GuiPixel extends GuiObject {
     @Getter
     private int x, y;
     @Getter
     private GuiColor color;
-    @Getter
-    private Mesh mesh;
 
     public GuiPixel(int x, int y, GuiColor color) {
         this.x = x;
