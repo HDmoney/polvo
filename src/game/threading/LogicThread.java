@@ -1,6 +1,6 @@
-package threading;
+package game.threading;
 
-import util.timesteps.FixedTimestep;
+import engine.util.timesteps.FixedTimestep;
 
 public class LogicThread implements Runnable {
 
@@ -30,6 +30,9 @@ public class LogicThread implements Runnable {
 
 
     private void init() {
+        // TODO: Load initial resources into a shared pool
+
+        // TODO:
     }
 
 

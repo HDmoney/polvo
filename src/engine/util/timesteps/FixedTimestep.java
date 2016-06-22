@@ -1,4 +1,4 @@
-package util.timesteps;
+package engine.util.timesteps;
 
 import static java.lang.Thread.yield;
 import static org.lwjgl.glfw.GLFW.glfwGetTime;

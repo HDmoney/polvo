@@ -1,4 +1,4 @@
-package threading;
+package game.threading;
 
 import org.lwjgl.glfw.GLFWErrorCallback;
 
@@ -9,11 +9,11 @@ public class MainThread {
 
 
     public static void main(String[] args) {
-        //NOTE: The rendering thread MUST be in the main thread, otherwise OSX will get angry.
+        //NOTE: The GLFW MUST be in the main thread, otherwise OSX will get angry.
         initGlfwLib();
 
         // TODO: if runPatcher in settings.ini
-        if (false) {
+        if (true) {
             //Opens patcher on startup.
             //We keep this on the main thread as well.
             new PatcherContext().run();

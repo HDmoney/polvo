@@ -1,8 +1,9 @@
-package gui;
+package engine.graphics.gui;
 
+import engine.graphics.gui.simple.GuiUtils;
+import engine.util.timesteps.FixedTimestep;
 import org.lwjgl.glfw.GLFWVidMode;
 import org.lwjgl.opengl.GL;
-import util.timesteps.FixedTimestep;
 
 import static org.lwjgl.glfw.Callbacks.glfwFreeCallbacks;
 import static org.lwjgl.glfw.GLFW.*;
@@ -25,11 +26,13 @@ public class Window {
         this.TITLE = title;
         this.DECORATED = decorated;
         this.VSYNC = vsync;
+        GuiUtils.setWidth(width);
+        GuiUtils.setHeight(height);
+        init();
     }
 
     public void run() {
         try {
-            init();
             loop();
 
             // Free the window callbacks and destroy the window
@@ -76,15 +79,16 @@ public class Window {
         }
         // Make the window visible
         glfwShowWindow(window);
-    }
 
-    private void loop() {
         // This line is critical for LWJGL's interoperation with GLFW's
         // OpenGL context, or any context that is managed externally.
         // LWJGL detects the context that is current in the current thread,
         // creates the GLCapabilities instance and makes the OpenGL
         // bindings available for use.
         GL.createCapabilities();
+    }
+
+    private void loop() {
 
         // Set the clear color
         glClearColor(r, g, b, a);
@@ -128,5 +132,13 @@ public class Window {
 
     public long getWindowID() {
         return window;
+    }
+
+    public int getWidth() {
+        return WIDTH;
+    }
+
+    public int getHeight() {
+        return HEIGHT;
     }
 }

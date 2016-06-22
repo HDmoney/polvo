@@ -1,4 +1,4 @@
-package util.settings;
+package engine.util.settings;
 
 public class Graphics {
     public static boolean fullscreen;
@@ -8,7 +8,7 @@ public class Graphics {
     public static boolean hdr;
     public static boolean bloom;
     public static boolean ambientocclusion;
-    public static int[] resolution = new int[]{640, 480};
+    public static int[] resolution = new int[]{854, 480};
 
     public static int getWidth() {
         return resolution[0];
