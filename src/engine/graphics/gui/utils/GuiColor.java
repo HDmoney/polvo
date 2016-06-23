@@ -21,8 +21,6 @@ public class GuiColor {
         this.af = a / 255f;
 
         rgba = new Vector4f(rf, gf, bf, af);
-
-        System.out.println(r + ", " + g + ", " + b);
     }
 
     public GuiColor(int r, int g, int b, int a) {

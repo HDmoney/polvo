@@ -1,7 +1,5 @@
 package engine.util.timesteps;
 
-import static org.lwjgl.glfw.GLFW.glfwGetTime;
-
 public abstract class AbstractTimestep {
 
     //TODO: VSync timestep
@@ -9,23 +7,15 @@ public abstract class AbstractTimestep {
     //TODO: Variable timestep?
 
     protected double lastLoopTime;
-    protected float timeCount;
     protected int iterationsPerSecond;
     protected int ipsCount;
+    protected float delta;
 
     public abstract boolean checkStopLoop();
 
     public abstract void iteration(double timeProgress);
 
     public abstract void run();
-
-    public float getDelta() {
-        double time = glfwGetTime();
-        float delta = (float) (time - lastLoopTime);
-        lastLoopTime = time;
-        timeCount += delta;
-        return delta;
-    }
 
     public void updateIPS() {
         ipsCount++;

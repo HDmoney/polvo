@@ -1,6 +1,7 @@
 package game.threading;
 
 import engine.graphics.ShaderProgram;
+import engine.graphics.Transformation;
 import engine.graphics.gui.Window;
 import engine.util.io.IOUtils;
 import engine.util.settings.Graphics;
@@ -14,8 +15,14 @@ public class RenderingContext {
     private static final float Z_FAR = 1000.f;
 
     public Window window;
+    //TODO: remove
+    Temp t;
+    //TODO: remove
+    float rot;
     private Matrix4f projectionMatrix;
+    private Matrix4f worldMatrix;
     private ShaderProgram shaderProgram;
+    private Transformation transformation = new Transformation();
 
     public void run() {
         // Unnecessary abstraction, but it does make things look nicer.
@@ -37,14 +44,27 @@ public class RenderingContext {
     }
 
     private void render(double delta) {
-        //TODO: remove
-        Temp t = new Temp();
+        rot += 60 / (1f / delta);
+        ;
+        if (rot > 360) {
+            rot = 0;
+        }
+        t.setRotation(rot, rot, rot);
 
         //Finally, we get to the meat.
         shaderProgram.bind();
-        //TODO: Move this?
+
+        projectionMatrix = transformation.getProjectionMatrix(
+                FOV, window.getWidth(), window.getHeight(), Z_NEAR, Z_FAR);
         shaderProgram.setUniform("projectionMatrix", projectionMatrix);
 
+        worldMatrix =
+                transformation.getWorldMatrix(
+                        t.getPosition(),
+                        t.getRotation(),
+                        t.getScale());
+
+        shaderProgram.setUniform("worldMatrix", worldMatrix);
         t.render(delta);
 
         shaderProgram.unbind();
@@ -57,8 +77,9 @@ public class RenderingContext {
         shaderProgram.link();
 
         // Create projection matrix
-        float aspectRatio = (float) window.getWidth() / window.getHeight();
-        projectionMatrix = new Matrix4f().perspective(FOV, aspectRatio, Z_NEAR, Z_FAR);
         shaderProgram.createUniform("projectionMatrix");
+        shaderProgram.createUniform("worldMatrix");
+
+        t = new Temp();
     }
 }

@@ -23,34 +23,27 @@ public class FixedTimestep extends AbstractTimestep {
     @Override
     public void run() {
 
-        //Heavily inspired by http://gafferongames.com/game-physics/fix-your-timestep/
-        //and https://github.com/SilverTiger/lwjgl3-tutorial/wiki/Game-loops
-
-        float delta;
         float accumulator = 0f;
         float interval = 1f / frequency;
+        float alpha;
 
         while (!checkStopLoop()) {
-            delta = getDelta();
-            accumulator += delta;
+            delta = (float) (glfwGetTime() - lastLoopTime);
+            lastLoopTime = glfwGetTime();
 
-            while (accumulator >= interval) {
-                iteration(delta);
-                accumulator -= interval;
-            }
+            iteration(delta);
 
-            sync();
+            sync(interval);
         }
     }
 
-    public void sync() {
+    public void sync(float interval) {
         double now = glfwGetTime();
         double timeSinceStart = now - lastLoopTime;
-        float targetTime = 1f / frequency;
 
-        while (timeSinceStart < targetTime) {
+        while (timeSinceStart < interval) {
             //NOTE: This may need to be optimized for Windows.
-            if (timeSinceStart < 3f / 4f * targetTime) {
+            if (timeSinceStart < 9f / 10f * interval) {
                 try {
                     Thread.sleep(1);
                 } catch (InterruptedException ex) {

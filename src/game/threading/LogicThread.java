@@ -5,6 +5,7 @@ import engine.util.timesteps.FixedTimestep;
 public class LogicThread implements Runnable {
 
     public void run() {
+        Thread.currentThread().setName("logic");
         init();
         loop();
     }

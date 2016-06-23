@@ -15,7 +15,7 @@ public class MainThread {
         initGlfwLib();
 
         // TODO: if runPatcher in settings.ini
-        if (true) {
+        if (false) {
             //Opens patcher on startup.
             //We keep this on the main thread as well.
             new PatcherContext().run();
