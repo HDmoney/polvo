@@ -19,7 +19,7 @@ public class PatcherContext {
 
     public void run() {
         // Unnecessary abstraction, but it does make things look nicer.
-        Window win = new Window(480, 360, "Patcher: Polvo", false, false) {
+        Window win = new Window(480, 360, "Patcher: Polvo", true, false) {
             @Override
             public void update(double delta) {
                 updateAndRender(delta);
