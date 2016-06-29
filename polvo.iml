@@ -13,5 +13,6 @@
     <orderEntry type="library" exported="" name="joml" level="project" />
     <orderEntry type="library" exported="" name="lwjgl3" level="project" />
     <orderEntry type="library" exported="" name="lombok" level="project" />
+    <orderEntry type="library" exported="" name="PNGDecoder" level="project" />
   </component>
 </module>

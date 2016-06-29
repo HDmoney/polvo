@@ -1,6 +1,6 @@
 package engine.graphics.gui.simple;
 
-import engine.graphics.Mesh;
+import engine.graphics.SimpleMesh;
 import engine.graphics.gui.utils.GuiColor;
 import lombok.Getter;
 import org.joml.Vector2i;
@@ -46,7 +46,7 @@ public class GuiLine extends GuiObject {
         float nyf0 = yToFloat(ny);
         float nyf1 = yToFloat(ny + 1);
 
-        mesh = new Mesh(new float[]{
+        mesh = new SimpleMesh(new float[]{
                 xf0, yf0, 0f,
                 xf1, yf0, 0f,
                 xf0, yf1, 0f,

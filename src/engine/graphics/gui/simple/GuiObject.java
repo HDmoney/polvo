@@ -1,12 +1,12 @@
 package engine.graphics.gui.simple;
 
-import engine.graphics.Mesh;
+import engine.graphics.SimpleMesh;
 import lombok.Getter;
 
 public abstract class GuiObject {
 
     @Getter
-    protected Mesh mesh;
+    protected SimpleMesh mesh;
 
     public abstract void render(double delta);
 }

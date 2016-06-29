@@ -1,10 +1,12 @@
 package game.threading;
 
+import engine.graphics.Camera;
 import engine.graphics.ShaderProgram;
 import engine.graphics.Transformation;
 import engine.graphics.gui.Window;
 import engine.util.io.IOUtils;
 import engine.util.settings.Graphics;
+import game.GameItem;
 import game.Temp;
 import org.joml.Matrix4f;
 
@@ -20,9 +22,10 @@ public class RenderingContext {
     //TODO: remove
     float rot;
     private Matrix4f projectionMatrix;
-    private Matrix4f worldMatrix;
+    private Matrix4f viewMatrix;
     private ShaderProgram shaderProgram;
     private Transformation transformation = new Transformation();
+    private Camera cam = new Camera();
 
     public void run() {
         // Unnecessary abstraction, but it does make things look nicer.
@@ -30,7 +33,11 @@ public class RenderingContext {
                 "Polvo", !Graphics.isBorderless(), Graphics.isVSyncEnabled()) {
             @Override
             public void update(double delta) {
-                render(delta);
+                if (cam == null)
+                    cam = new Camera();
+                if (t == null)
+                    t = new Temp();
+                render(delta, cam, new GameItem[]{t});
             }
         };
         win.setClearColor(0.15f, 0.15f, 0.15f, 1f);
@@ -43,9 +50,8 @@ public class RenderingContext {
         window.run();
     }
 
-    private void render(double delta) {
+    private void render(double delta, Camera camera, GameItem[] gameItems) {
         rot += 60 / (1f / delta);
-        ;
         if (rot > 360) {
             rot = 0;
         }
@@ -54,17 +60,21 @@ public class RenderingContext {
         //Finally, we get to the meat.
         shaderProgram.bind();
 
-        projectionMatrix = transformation.getProjectionMatrix(
-                FOV, window.getWidth(), window.getHeight(), Z_NEAR, Z_FAR);
+        projectionMatrix = transformation.getProjectionMatrix(FOV, window.getWidth(), window.getHeight(), Z_NEAR, Z_FAR);
         shaderProgram.setUniform("projectionMatrix", projectionMatrix);
 
-        worldMatrix =
-                transformation.getWorldMatrix(
-                        t.getPosition(),
-                        t.getRotation(),
-                        t.getScale());
+        // Update view Matrix
+        viewMatrix = transformation.getViewMatrix(camera);
 
-        shaderProgram.setUniform("worldMatrix", worldMatrix);
+        shaderProgram.setUniform("texture_sampler", 0);
+        // Render each gameItem
+        for (GameItem gameItem : gameItems) {
+            // Set model view matrix for this item
+            Matrix4f modelViewMatrix = transformation.getModelViewMatrix(gameItem, viewMatrix);
+            shaderProgram.setUniform("modelViewMatrix", modelViewMatrix);
+            // Render the mes for this game item
+            gameItem.getMesh().render();
+        }
         t.render(delta);
 
         shaderProgram.unbind();
@@ -78,8 +88,7 @@ public class RenderingContext {
 
         // Create projection matrix
         shaderProgram.createUniform("projectionMatrix");
-        shaderProgram.createUniform("worldMatrix");
-
-        t = new Temp();
+        shaderProgram.createUniform("modelViewMatrix");
+        shaderProgram.createUniform("texture_sampler");
     }
 }

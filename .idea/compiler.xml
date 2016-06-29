@@ -15,7 +15,9 @@
     </wildcardResourcePatterns>
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true">
-        <processorPath useClasspath="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/libs/lombok.jar" />
+        </processorPath>
       </profile>
     </annotationProcessing>
   </component>

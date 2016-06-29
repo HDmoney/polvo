@@ -1,6 +1,6 @@
 package engine.graphics.gui.utils;
 
-import engine.graphics.Mesh;
+import engine.graphics.SimpleMesh;
 import engine.graphics.gui.simple.GuiObject;
 
 import static org.lwjgl.opengl.GL11.*;
@@ -12,11 +12,11 @@ public class GuiBatch extends GuiObject {
 
     public GuiBatch(GuiObject... objects) {
         int numObjects = objects.length;
-        Mesh[] meshes = new Mesh[numObjects];
+        SimpleMesh[] meshes = new SimpleMesh[numObjects];
         for (int i = 0; i < numObjects; i++) {
             meshes[i] = objects[i].getMesh();
         }
-        this.mesh = Mesh.combine(meshes);
+        this.mesh = SimpleMesh.combine(meshes);
     }
 
     @Override

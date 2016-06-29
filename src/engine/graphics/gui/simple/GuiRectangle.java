@@ -1,6 +1,6 @@
 package engine.graphics.gui.simple;
 
-import engine.graphics.Mesh;
+import engine.graphics.SimpleMesh;
 import engine.graphics.gui.utils.GuiColor;
 import lombok.Getter;
 import org.joml.Vector2i;
@@ -41,7 +41,7 @@ public class GuiRectangle extends GuiObject {
         float xf1 = xToFloat(x + width);
         float yf1 = yToFloat(y + height);
 
-        mesh = new Mesh(new float[]{
+        mesh = new SimpleMesh(new float[]{
                 xf, yf1, 0.0f,
                 xf, yf, 0.0f,
                 xf1, yf, 0.0f,
